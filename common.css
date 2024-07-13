@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import './color.css';
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'PT Serif', cursive;
+}
+
+body {
+    background-color: #f2e0d5;
+    min-height: calc(100vh - 5rem);
+    position: relative;
+    padding-bottom: 5rem !important;
+}
+
+nav {
+    background-color: var(--lightBlue);
+}
+
+nav .title {
+    padding: 0.75rem;
+    padding-left: 0px;
+    color: var(--brawon);
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav .logo{
+    height: 1.75rem;
+    margin-left: 0.75rem;
+   
+}
+
+nav form {
+    display: inline;
+    float: right;
+    padding-top: 0.71rem;
+    padding-right: 0.71REM;
+}
+
+nav.search {
+    font-family: cursive;
+    padding: 0.25rem 0.75rem;
+    float: right;
+}
+
+nav .search:focus{
+    outline: none;
+    border: 2px solid var(--brawon);
+}
+
+.heading{
+    text-align: center;
+    margin: 1.75rem;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: var(--pink);
+    width: calc(100% - 1.5rem);
+    padding: 0.75rem;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 602px) {
+    footer h1{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+        gap:0.75rem
+    }
+    body{
+        min-height: calc(100vh - 10rem) !important;
+        padding-bottom: 10rem !important;
+    }
+}
+
+@media screen and (max-width: 602px) {
+    nav{
+        display: inline-block;
+        width: 100%;
+    }
+    nav form{
+        float: none;
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 0.75rem;
+    }
+}

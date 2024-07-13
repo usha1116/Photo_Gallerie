@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallerie | A photo search App</title>
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="search.css" />
+</head>
+
+<body>
+    <nav>
+        <a href="./"> <img src="./imges/logo.png" alt="Logo" class="logo"> </a>
+        <a href="./">
+            <h1 class="title">Gallerie</h1>
+        </a>
+        <form action="./search.html" method="get">
+            <input type="text" name="q" autocomplete="off" class="search" placeholder="search anything" />
+            <input type="submit" value="search" class="search">
+        </form>
+    </nav>
+
+    <section>
+<h1 class="heading"> &ddagger; SEARCH FOR - <span id="search-query"> </span> &ddagger;</h1>
+        <div class="container" id="result-container"> </div>
+    </section>
+    <footer>
+
+        <a href="./">
+            <h5>Gallerie</h5>
+        </a>
+        <h1> | </h1>
+        <h5>designed and Devlop by USha Teli</h5>
+        <h1> | </h1>
+        <a href="https://github.com/usha1116">
+            <h5>GitHub</h5>
+        </a>
+    </footer>
+
+    <script src="search.js"></script>
+    <script src="common.js"></script>
+</body>
+
+</html>

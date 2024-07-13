@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallerie | A photo search App</title>
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="detail.css" />
+</head>
+
+<body>
+    <nav>
+        <a href="./"> <img src="./imges/logo.png" alt="Logo" class="logo"> </a>
+        <a href="./">
+            <h1 class="title">Gallerie</h1>
+        </a>
+        <form action="./search.html" method="get">
+            <input type="text" name="q" autocomplete="off" class="search" placeholder="search anything" />
+            <input type="submit" value="search" class="search">
+        </form>
+    </nav>
+
+
+    <section>
+        <h1 class="heading"> &ddagger; DETAIL FOR - <span id="image-id"></span>&ddagger;</h1>
+
+        <div class="detail">
+            <img alt="primary" id="detail-image" />
+            <div class="content">
+                <h1 class="description" id="description-text"></h1>
+                <br />
+                <h3>Uploaded by - @<span id="username"></span></h3>
+                <br />
+                <h4>Date - <span id="upload-date"></span></h4>
+                <br />
+
+                <h5><span id="like-count"></span>Likes(<span id="view-count"></span>views)</h5>
+                <br />
+                <hr />
+                <br />
+                <h1 class="description" id="alt-description"></h1>
+                <br />
+                <br />
+                <br />
+                <h5>Base Colour</h5>
+                <br />
+                <div class="image-color" id="image-color">
+
+                    <span id="color-text"></span>
+                </div>
+
+                <br />
+                <br />
+
+                <a tabindex="_blank" id="download-link" class="button" > DOWNLOAD </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+
+        <a href="./">
+            <h5>Gallerie</h5>
+        </a>
+        <h1> | </h1>
+        <h5>designed and Devlop by USha Teli</h5>
+        <h1> | </h1>
+        <a href="https://github.com/usha1116">
+            <h5>GitHub</h5>
+        </a>
+    </footer>
+    <script src="common.js"></script>
+    <script src="detail.js"></script>
+</body>
+
+</html>

@@ -19,6 +19,8 @@ body {
     min-height: calc(100vh - 5rem);
     position: relative;
     padding-bottom: 5rem !important;
+    display: inline-block;
+    width: 100%;
 }
 
 nav {
@@ -87,7 +89,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 602px) {
+@media screen and (max-width: 601px) {
     nav{
         display: inline-block;
         width: 100%;
